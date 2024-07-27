@@ -1,0 +1,5 @@
+C:/ksw/source/rest-server/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/ksw/source/rest-server/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+C:/ksw/source/rest-server/out/build/x64-Debug/rest-server/CMakeFiles/rest-server.dir
+C:/ksw/source/rest-server/out/build/x64-Debug/rest-server/CMakeFiles/edit_cache.dir
+C:/ksw/source/rest-server/out/build/x64-Debug/rest-server/CMakeFiles/rebuild_cache.dir

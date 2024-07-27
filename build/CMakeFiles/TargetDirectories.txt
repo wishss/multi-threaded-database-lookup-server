@@ -1,0 +1,5 @@
+/mnt/c/ksw/source/rest-server/build/CMakeFiles/edit_cache.dir
+/mnt/c/ksw/source/rest-server/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/ksw/source/rest-server/build/rest-server/CMakeFiles/rest-server.dir
+/mnt/c/ksw/source/rest-server/build/rest-server/CMakeFiles/edit_cache.dir
+/mnt/c/ksw/source/rest-server/build/rest-server/CMakeFiles/rebuild_cache.dir

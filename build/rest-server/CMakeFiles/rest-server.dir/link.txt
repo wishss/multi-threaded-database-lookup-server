@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o" "CMakeFiles/rest-server.dir/main.cpp.o" -o rest-server  /usr/lib/x86_64-linux-gnu/libcpprest.so.2.10 /usr/lib/x86_64-linux-gnu/libssl.so /usr/lib/x86_64-linux-gnu/libcrypto.so /usr/lib/x86_64-linux-gnu/libsqlite3.so 
