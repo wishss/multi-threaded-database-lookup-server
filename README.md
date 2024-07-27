@@ -38,14 +38,21 @@ Linux용 Windows 하위 시스템 체크 및 재부팅 후, 다음 명령어를 
 ## 전체 아키텍처 구성도
 ![image](https://github.com/user-attachments/assets/107a5573-e6b8-49f5-a88c-85a4d8ea0a15)
 
-
-
-
-
 ## REST API 요청/응답 명세
+### 시스템 상태(CPU/Memory/Disk) 조회
+    Get /api/systemstate/YYYY-MM-DD/YYYY-MM-DD
+    
+    #### [ 입력 데이터(Request) ] ####
+    SysyemState {
+        "date" : "string"
+        "cpu" : number
+        "memory" : number
+        "disk" : number
+    }
 
-
-
+    #### [ 반환 데이터(Response) ] ####
+    성공 200, OK
+    실패 400, BadRequest
 
 ## 사용한 라이브러리
 
