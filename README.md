@@ -31,33 +31,39 @@ Linux용 Windows 하위 시스템 체크 및 재부팅 후, 다음 명령어를 
 2. 도구 -> 옵션 -> 플랫폼 간 -> 연결 관리자 -> 원격시스템 추가
 3. 디버그 대상 .exe로 변경
 
-## 프로젝트 빌드/테스트/실행
-
-
+## 프로젝트 빌드/실행/테스트
+### 빌드
+    mkdir build
+    cd build
+    cmake ..
+    make
+### 실행
+    ./실행파일
+### 테스트
+    curl http://localhost:8080/api/systemstate/YYYY-MM-DD/YYYY-MM-DD
 
 ## 전체 아키텍처 구성도
 ![image](https://github.com/user-attachments/assets/107a5573-e6b8-49f5-a88c-85a4d8ea0a15)
 
 ## REST API 요청/응답 명세
 ### 시스템 상태(CPU/Memory/Disk) 조회
-    Get /api/systemstate/YYYY-MM-DD/YYYY-MM-DD
+    
     
     #### [ 입력 데이터(Request) ] ####
-    SysyemState {
+    Get /api/systemstate/YYYY-MM-DD/YYYY-MM-DD
+
+    #### [ 반환 데이터(Response) ] ####
+    {
         "date" : "string"
         "cpu" : number
         "memory" : number
         "disk" : number
     }
-
-    #### [ 반환 데이터(Response) ] ####
-    성공 200, OK
-    실패 400, BadRequest
-
+    
 ## 사용한 라이브러리
-
-
-
++ cpprestsdk
++ SQLite3
++ OpenSSL
 
 ## 요구사항 불만족 항목
 
