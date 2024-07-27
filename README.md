@@ -5,7 +5,7 @@
 
 ## 개발 환경 구축
 + 환경 : Windows 11, WSL
-+ Editor : Visual Stdio 2019
++ IDE : Visual Stdio 2019
 + DB : SQLite
 + C++
 
@@ -36,6 +36,7 @@ Linux용 Windows 하위 시스템 체크 및 재부팅 후, 다음 명령어를 
 
 
 ## 전체 아키텍처 구성도
+![image](https://github.com/user-attachments/assets/463169cf-eca8-48fa-b45e-5a6016208be2)
 
 
 
