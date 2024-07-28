@@ -1,7 +1,4 @@
-﻿// rest-server.h: 표준 시스템 포함 파일
-// 또는 프로젝트 특정 포함 파일이 들어 있는 포함 파일입니다.
-
-#pragma once
+﻿#pragma once
 
 #include <cpprest/http_listener.h>
 #include <cpprest/uri.h>
@@ -18,9 +15,9 @@ class ListenerMgmt {
 public:
 	ListenerMgmt(const std::string& uri);
 
-	void MgmtStart();
+	void startMgmt();
 
 private:
-	http_listener listener;
-	void Response(http_request request);
+	http_listener listener_;
+	void response(http_request request);
 };
