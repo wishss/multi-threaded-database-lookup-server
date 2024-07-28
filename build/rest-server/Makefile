@@ -130,6 +130,30 @@ rest-server/fast:
 	cd /mnt/c/ksw/source/rest-server/build && $(MAKE) $(MAKESILENT) -f rest-server/CMakeFiles/rest-server.dir/build.make rest-server/CMakeFiles/rest-server.dir/build
 .PHONY : rest-server/fast
 
+DBMgmt.o: DBMgmt.cpp.o
+.PHONY : DBMgmt.o
+
+# target to build an object file
+DBMgmt.cpp.o:
+	cd /mnt/c/ksw/source/rest-server/build && $(MAKE) $(MAKESILENT) -f rest-server/CMakeFiles/rest-server.dir/build.make rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.o
+.PHONY : DBMgmt.cpp.o
+
+DBMgmt.i: DBMgmt.cpp.i
+.PHONY : DBMgmt.i
+
+# target to preprocess a source file
+DBMgmt.cpp.i:
+	cd /mnt/c/ksw/source/rest-server/build && $(MAKE) $(MAKESILENT) -f rest-server/CMakeFiles/rest-server.dir/build.make rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.i
+.PHONY : DBMgmt.cpp.i
+
+DBMgmt.s: DBMgmt.cpp.s
+.PHONY : DBMgmt.s
+
+# target to generate assembly for a file
+DBMgmt.cpp.s:
+	cd /mnt/c/ksw/source/rest-server/build && $(MAKE) $(MAKESILENT) -f rest-server/CMakeFiles/rest-server.dir/build.make rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.s
+.PHONY : DBMgmt.cpp.s
+
 ListenerMgmt.o: ListenerMgmt.cpp.o
 .PHONY : ListenerMgmt.o
 
@@ -211,6 +235,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... rest-server"
+	@echo "... DBMgmt.o"
+	@echo "... DBMgmt.i"
+	@echo "... DBMgmt.s"
 	@echo "... ListenerMgmt.o"
 	@echo "... ListenerMgmt.i"
 	@echo "... ListenerMgmt.s"

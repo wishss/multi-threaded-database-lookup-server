@@ -959,4 +959,6 @@ rest-server/CMakeFiles/rest-server.dir/main.cpp.o: \
  /usr/include/boost/asio/detail/dependent_type.hpp \
  /usr/include/boost/asio/ssl/detail/read_op.hpp \
  /usr/include/boost/asio/ssl/detail/shutdown_op.hpp \
- /usr/include/boost/asio/ssl/detail/write_op.hpp
+ /usr/include/boost/asio/ssl/detail/write_op.hpp \
+ /mnt/c/ksw/source/rest-server/rest-server/DBMgmt.h \
+ /usr/include/sqlite3.h

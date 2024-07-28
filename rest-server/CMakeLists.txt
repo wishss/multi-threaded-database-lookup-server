@@ -10,6 +10,8 @@ add_executable (rest-server
     "ListenerMgmt.h" 
     "SystemStateMgmt.cpp" 
     "SystemStateMgmt.h"
+    "DBMgmt.cpp"
+    "DBMgmt.h"
     )
 
 # TODO: 필요한 경우 테스트를 추가하고 대상을 설치합니다.
