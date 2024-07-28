@@ -154,6 +154,30 @@ ListenerMgmt.cpp.s:
 	cd /mnt/c/ksw/source/rest-server/build && $(MAKE) $(MAKESILENT) -f rest-server/CMakeFiles/rest-server.dir/build.make rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.s
 .PHONY : ListenerMgmt.cpp.s
 
+SystemStateMgmt.o: SystemStateMgmt.cpp.o
+.PHONY : SystemStateMgmt.o
+
+# target to build an object file
+SystemStateMgmt.cpp.o:
+	cd /mnt/c/ksw/source/rest-server/build && $(MAKE) $(MAKESILENT) -f rest-server/CMakeFiles/rest-server.dir/build.make rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o
+.PHONY : SystemStateMgmt.cpp.o
+
+SystemStateMgmt.i: SystemStateMgmt.cpp.i
+.PHONY : SystemStateMgmt.i
+
+# target to preprocess a source file
+SystemStateMgmt.cpp.i:
+	cd /mnt/c/ksw/source/rest-server/build && $(MAKE) $(MAKESILENT) -f rest-server/CMakeFiles/rest-server.dir/build.make rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.i
+.PHONY : SystemStateMgmt.cpp.i
+
+SystemStateMgmt.s: SystemStateMgmt.cpp.s
+.PHONY : SystemStateMgmt.s
+
+# target to generate assembly for a file
+SystemStateMgmt.cpp.s:
+	cd /mnt/c/ksw/source/rest-server/build && $(MAKE) $(MAKESILENT) -f rest-server/CMakeFiles/rest-server.dir/build.make rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.s
+.PHONY : SystemStateMgmt.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -190,6 +214,9 @@ help:
 	@echo "... ListenerMgmt.o"
 	@echo "... ListenerMgmt.i"
 	@echo "... ListenerMgmt.s"
+	@echo "... SystemStateMgmt.o"
+	@echo "... SystemStateMgmt.i"
+	@echo "... SystemStateMgmt.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
