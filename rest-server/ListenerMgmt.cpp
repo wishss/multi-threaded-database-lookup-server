@@ -7,7 +7,6 @@ ListenerMgmt::ListenerMgmt(const std::string& uri)
 }
 
 void ListenerMgmt::startMgmt() {
-    Sleep(5000);
     try {
         listener_
             .open()
