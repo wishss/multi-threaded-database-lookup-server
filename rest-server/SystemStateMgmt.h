@@ -9,6 +9,10 @@
 #include <iomanip> 
 #include <thread>
 #include <chrono> 
+#include <ctime>
+#include <atomic>
+
+#include "DBMgmt.h"
 
 class SystemStateMgmt
 {
@@ -17,21 +21,26 @@ public:
 	~SystemStateMgmt();
 
 	void startMgmt();
+	void stopMgmt();
 
 private:
-	//시스템 상태 관련 함수
 	double getSystemCpuUsage();
 	long getSystemMemoryUsage();
 	long getSystemDiskUsage();
+
 	long getTotalCpuTime();
 	long getIdleCpuTime();
 	double calculateCpuUsagePercent(long total_cpu_time, long idle_cpu_time);
 	bool executeCommand(const std::string& command, std::string& output);
 
+	std::string getCurrentDate();
+	std::string getCurrentTime();
+
 private:
-	/* db 접근 관련 함수 필요 */
 	void updateSystemState();
 
 private:
+	std::atomic<bool> stop_requested_;
 	long ticks_per_second_;
+	DBMgmt db_mgmt_;
 };

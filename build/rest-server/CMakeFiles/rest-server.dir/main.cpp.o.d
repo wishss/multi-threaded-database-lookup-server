@@ -184,8 +184,10 @@ rest-server/CMakeFiles/rest-server.dir/main.cpp.o: \
  /usr/include/libintl.h /usr/include/c++/13/bits/locale_facets_nonio.tcc \
  /usr/include/c++/13/bits/locale_conv.h \
  /usr/include/c++/13/bits/quoted_string.h /usr/include/c++/13/chrono \
- /mnt/c/ksw/source/rest-server/rest-server/ListenerMgmt.h \
- /usr/include/cpprest/http_listener.h /usr/include/cpprest/http_msg.h \
+ /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
+ /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+ /mnt/c/ksw/source/rest-server/rest-server/DBMgmt.h \
+ /usr/include/sqlite3.h /usr/include/cpprest/json.h \
  /usr/include/cpprest/asyncrt_utils.h \
  /usr/include/cpprest/details/basic_types.h \
  /usr/include/cpprest/details/cpprest_compat.h /usr/include/assert.h \
@@ -214,8 +216,6 @@ rest-server/CMakeFiles/rest-server.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /usr/include/c++/13/atomic /usr/include/c++/13/bits/atomic_base.h \
- /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/condition_variable \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
@@ -284,6 +284,8 @@ rest-server/CMakeFiles/rest-server.dir/main.cpp.o: \
  /usr/include/c++/13/bits/stl_numeric.h \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
+ /mnt/c/ksw/source/rest-server/rest-server/ListenerMgmt.h \
+ /usr/include/cpprest/http_listener.h /usr/include/cpprest/http_msg.h \
  /usr/include/cpprest/containerstream.h /usr/include/cpprest/astreambuf.h \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/13/math.h /usr/include/cpprest/streams.h \
@@ -294,9 +296,8 @@ rest-server/CMakeFiles/rest-server.dir/main.cpp.o: \
  /usr/include/cpprest/http_compression.h \
  /usr/include/cpprest/http_headers.h /usr/include/c++/13/map \
  /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h /usr/include/cpprest/json.h \
- /usr/include/cpprest/uri.h /usr/include/cpprest/base_uri.h \
- /usr/include/cpprest/uri_builder.h \
+ /usr/include/c++/13/bits/stl_multimap.h /usr/include/cpprest/uri.h \
+ /usr/include/cpprest/base_uri.h /usr/include/cpprest/uri_builder.h \
  /usr/include/cpprest/details/http_constants.dat \
  /usr/include/boost/asio/ssl.hpp /usr/include/boost/asio/ssl/context.hpp \
  /usr/include/boost/asio/detail/config.hpp /usr/include/boost/config.hpp \
@@ -959,6 +960,4 @@ rest-server/CMakeFiles/rest-server.dir/main.cpp.o: \
  /usr/include/boost/asio/detail/dependent_type.hpp \
  /usr/include/boost/asio/ssl/detail/read_op.hpp \
  /usr/include/boost/asio/ssl/detail/shutdown_op.hpp \
- /usr/include/boost/asio/ssl/detail/write_op.hpp \
- /mnt/c/ksw/source/rest-server/rest-server/DBMgmt.h \
- /usr/include/sqlite3.h
+ /usr/include/boost/asio/ssl/detail/write_op.hpp
