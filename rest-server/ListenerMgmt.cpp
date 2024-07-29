@@ -1,38 +1,72 @@
-﻿// rest-server.cpp : 애플리케이션의 진입점을 정의합니다.
-//
-
-#include "ListenerMgmt.h"
+﻿#include "ListenerMgmt.h"
 
 ListenerMgmt::ListenerMgmt(const std::string& uri)
-    : listener(uri)
+    : listener_(uri)
 {
-    listener.support(methods::GET, std::bind(&ListenerMgmt::Response, this, std::placeholders::_1));
+    listener_.support(methods::GET, std::bind(&ListenerMgmt::response, this, std::placeholders::_1));
 }
 
-void ListenerMgmt::MgmtStart() {
+ListenerMgmt::~ListenerMgmt()
+{
+
+}
+
+void ListenerMgmt::startMgmt() {
+    if (!db_mgmt_.open("state.db")) { throw std::runtime_error("Failed to open database."); }
+
     try {
-        listener
+        listener_
             .open()
-            .then([this]() { std::cout << "Starting to listen at: " << listener.uri().to_string() << std::endl; })
+            .then([this]() { std::cout << "Starting to listen at: " << listener_.uri().to_string() << std::endl; })
             .wait();
 
-        // 서버가 종료될 때까지 대기
+        // mgmt가 종료될 때까지 대기
         std::string line;
+        std::cout << "Press Enter to stop the server..." << std::endl;
         std::getline(std::cin, line);
+
+        // mgmt 종료
+        stopMgmt();
+        std::cout << "Server stopped." << std::endl;
     }
     catch (const std::exception& e) {
         std::cerr << "An error occurred: " << e.what() << std::endl;
     }
 }
 
-void ListenerMgmt::Response(http_request request) {
-    // JSON 응답 생성
-    json::value response_data;
-    response_data[U("date")] = json::value::string(U("2024-07-25"));
-    response_data[U("cpu")] = json::value::number(85.6);
-    response_data[U("memory")] = json::value::number(4096.0);
-    response_data[U("disk")] = json::value::number(2048.0);
+void ListenerMgmt::stopMgmt() {
+    if (!stop_requested_.load()) {
+        stop_requested_.store(true);
+        listener_.close().wait();
+        db_mgmt_.close();
+    }
+}
 
-    // 응답을 클라이언트에 반환
-    request.reply(status_codes::OK, response_data);
+void ListenerMgmt::response(http_request request) {
+    request
+        .extract_json()
+        .then([=](json::value request_data) {
+        // URL 에서 데이터 추출
+        auto path = uri::split_path(uri::decode(request.request_uri().path()));
+
+        if (path.size() != 4 || path[0] != "api" || path[1] != "systemstate") {
+            return request.reply(status_codes::BadRequest, U("Invalid URL format\n"));
+        }
+
+        std::string start_date = path[2];
+        std::string end_date = path[3];
+
+        // 클라이언트에 응답 반환
+        return request.reply(status_codes::OK, db_mgmt_.getDataByDateRange(start_date, end_date));
+        })
+        .then([](pplx::task<void> previous_task) {
+                try {
+                    // 응답이 정상적으로 전송되었는지 확인
+                    previous_task.get();
+                }
+                catch (const std::exception& e) {
+                    std::cerr << "Failed to send response: " << e.what() << std::endl;
+                }
+            })
+        .wait();
 }

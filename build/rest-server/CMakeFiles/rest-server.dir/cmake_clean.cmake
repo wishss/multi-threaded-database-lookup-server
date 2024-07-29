@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/rest-server.dir/DBMgmt.cpp.o"
+  "CMakeFiles/rest-server.dir/DBMgmt.cpp.o.d"
   "CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o"
   "CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o.d"
+  "CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o"
+  "CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o.d"
   "CMakeFiles/rest-server.dir/main.cpp.o"
   "CMakeFiles/rest-server.dir/main.cpp.o.d"
   "rest-server"

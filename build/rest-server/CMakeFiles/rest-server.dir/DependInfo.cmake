@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/mnt/c/ksw/source/rest-server/rest-server/DBMgmt.cpp" "rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.o" "gcc" "rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.o.d"
   "/mnt/c/ksw/source/rest-server/rest-server/ListenerMgmt.cpp" "rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o" "gcc" "rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o.d"
+  "/mnt/c/ksw/source/rest-server/rest-server/SystemStateMgmt.cpp" "rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o" "gcc" "rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o.d"
   "/mnt/c/ksw/source/rest-server/rest-server/main.cpp" "rest-server/CMakeFiles/rest-server.dir/main.cpp.o" "gcc" "rest-server/CMakeFiles/rest-server.dir/main.cpp.o.d"
   )
 

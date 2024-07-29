@@ -69,24 +69,10 @@ include rest-server/CMakeFiles/rest-server.dir/progress.make
 # Include the compile flags for this target's objects.
 include rest-server/CMakeFiles/rest-server.dir/flags.make
 
-rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o: rest-server/CMakeFiles/rest-server.dir/flags.make
-rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o: /mnt/c/ksw/source/rest-server/rest-server/ListenerMgmt.cpp
-rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o: rest-server/CMakeFiles/rest-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/ksw/source/rest-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o"
-	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o -MF CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o.d -o CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o -c /mnt/c/ksw/source/rest-server/rest-server/ListenerMgmt.cpp
-
-rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rest-server.dir/ListenerMgmt.cpp.i"
-	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/ksw/source/rest-server/rest-server/ListenerMgmt.cpp > CMakeFiles/rest-server.dir/ListenerMgmt.cpp.i
-
-rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rest-server.dir/ListenerMgmt.cpp.s"
-	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/ksw/source/rest-server/rest-server/ListenerMgmt.cpp -o CMakeFiles/rest-server.dir/ListenerMgmt.cpp.s
-
 rest-server/CMakeFiles/rest-server.dir/main.cpp.o: rest-server/CMakeFiles/rest-server.dir/flags.make
 rest-server/CMakeFiles/rest-server.dir/main.cpp.o: /mnt/c/ksw/source/rest-server/rest-server/main.cpp
 rest-server/CMakeFiles/rest-server.dir/main.cpp.o: rest-server/CMakeFiles/rest-server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/ksw/source/rest-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rest-server/CMakeFiles/rest-server.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/ksw/source/rest-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object rest-server/CMakeFiles/rest-server.dir/main.cpp.o"
 	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT rest-server/CMakeFiles/rest-server.dir/main.cpp.o -MF CMakeFiles/rest-server.dir/main.cpp.o.d -o CMakeFiles/rest-server.dir/main.cpp.o -c /mnt/c/ksw/source/rest-server/rest-server/main.cpp
 
 rest-server/CMakeFiles/rest-server.dir/main.cpp.i: cmake_force
@@ -97,23 +83,69 @@ rest-server/CMakeFiles/rest-server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rest-server.dir/main.cpp.s"
 	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/ksw/source/rest-server/rest-server/main.cpp -o CMakeFiles/rest-server.dir/main.cpp.s
 
+rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o: rest-server/CMakeFiles/rest-server.dir/flags.make
+rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o: /mnt/c/ksw/source/rest-server/rest-server/ListenerMgmt.cpp
+rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o: rest-server/CMakeFiles/rest-server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/ksw/source/rest-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o"
+	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o -MF CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o.d -o CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o -c /mnt/c/ksw/source/rest-server/rest-server/ListenerMgmt.cpp
+
+rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rest-server.dir/ListenerMgmt.cpp.i"
+	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/ksw/source/rest-server/rest-server/ListenerMgmt.cpp > CMakeFiles/rest-server.dir/ListenerMgmt.cpp.i
+
+rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rest-server.dir/ListenerMgmt.cpp.s"
+	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/ksw/source/rest-server/rest-server/ListenerMgmt.cpp -o CMakeFiles/rest-server.dir/ListenerMgmt.cpp.s
+
+rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o: rest-server/CMakeFiles/rest-server.dir/flags.make
+rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o: /mnt/c/ksw/source/rest-server/rest-server/SystemStateMgmt.cpp
+rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o: rest-server/CMakeFiles/rest-server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/ksw/source/rest-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o"
+	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o -MF CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o.d -o CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o -c /mnt/c/ksw/source/rest-server/rest-server/SystemStateMgmt.cpp
+
+rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.i"
+	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/ksw/source/rest-server/rest-server/SystemStateMgmt.cpp > CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.i
+
+rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.s"
+	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/ksw/source/rest-server/rest-server/SystemStateMgmt.cpp -o CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.s
+
+rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.o: rest-server/CMakeFiles/rest-server.dir/flags.make
+rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.o: /mnt/c/ksw/source/rest-server/rest-server/DBMgmt.cpp
+rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.o: rest-server/CMakeFiles/rest-server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/ksw/source/rest-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.o"
+	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.o -MF CMakeFiles/rest-server.dir/DBMgmt.cpp.o.d -o CMakeFiles/rest-server.dir/DBMgmt.cpp.o -c /mnt/c/ksw/source/rest-server/rest-server/DBMgmt.cpp
+
+rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/rest-server.dir/DBMgmt.cpp.i"
+	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/ksw/source/rest-server/rest-server/DBMgmt.cpp > CMakeFiles/rest-server.dir/DBMgmt.cpp.i
+
+rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/rest-server.dir/DBMgmt.cpp.s"
+	cd /mnt/c/ksw/source/rest-server/build/rest-server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/ksw/source/rest-server/rest-server/DBMgmt.cpp -o CMakeFiles/rest-server.dir/DBMgmt.cpp.s
+
 # Object files for target rest-server
 rest__server_OBJECTS = \
+"CMakeFiles/rest-server.dir/main.cpp.o" \
 "CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o" \
-"CMakeFiles/rest-server.dir/main.cpp.o"
+"CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o" \
+"CMakeFiles/rest-server.dir/DBMgmt.cpp.o"
 
 # External object files for target rest-server
 rest__server_EXTERNAL_OBJECTS =
 
-rest-server/rest-server: rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o
 rest-server/rest-server: rest-server/CMakeFiles/rest-server.dir/main.cpp.o
+rest-server/rest-server: rest-server/CMakeFiles/rest-server.dir/ListenerMgmt.cpp.o
+rest-server/rest-server: rest-server/CMakeFiles/rest-server.dir/SystemStateMgmt.cpp.o
+rest-server/rest-server: rest-server/CMakeFiles/rest-server.dir/DBMgmt.cpp.o
 rest-server/rest-server: rest-server/CMakeFiles/rest-server.dir/build.make
 rest-server/rest-server: /usr/lib/x86_64-linux-gnu/libcpprest.so.2.10
 rest-server/rest-server: /usr/lib/x86_64-linux-gnu/libssl.so
 rest-server/rest-server: /usr/lib/x86_64-linux-gnu/libcrypto.so
 rest-server/rest-server: /usr/lib/x86_64-linux-gnu/libsqlite3.so
 rest-server/rest-server: rest-server/CMakeFiles/rest-server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/ksw/source/rest-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable rest-server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/ksw/source/rest-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable rest-server"
 	cd /mnt/c/ksw/source/rest-server/build/rest-server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rest-server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
