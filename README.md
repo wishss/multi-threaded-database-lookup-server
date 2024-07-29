@@ -46,7 +46,7 @@ Linux용 Windows 하위 시스템 체크 및 재부팅 후, 다음 명령어를 
     curl http://localhost:8080/api/systemstate/YYYY-MM-DD/YYYY-MM-DD
 
     동시 요청 확인(총 요청 수: 100, 동시 요청 수: 10)
-    ab -n 100 -c 10 http://localhost:8080/api
+    ab -n 100 -c 10 http://localhost:8080/api/systemstate/YYYY-MM-DD/YYYY-MM-DD
 
 ## 전체 아키텍처 구성도
 ![image](https://github.com/user-attachments/assets/107a5573-e6b8-49f5-a88c-85a4d8ea0a15)
