@@ -25,6 +25,7 @@ Linux용 Windows 하위 시스템 체크 및 재부팅 후, 다음 명령어를 
     sudo apt update
     sudo apt install build-essential gdb cmake
     sudo apt install sqlite3
+    sudo apt install apache2-utils
 
 ### Visual Stdio 2019 에서 WSL 연결 설정
 1. 프로젝트 생성
@@ -38,9 +39,14 @@ Linux용 Windows 하위 시스템 체크 및 재부팅 후, 다음 명령어를 
     cmake ..
     make
 ### 실행
-    ./실행파일
+    cd rest-server
+    ./rest-server
 ### 테스트
+    응답 메세지 확인
     curl http://localhost:8080/api/systemstate/YYYY-MM-DD/YYYY-MM-DD
+
+    동시 요청 확인(총 요청 수: 100, 동시 요청 수: 10)
+    ab -n 100 -c 10 http://localhost:8080/api
 
 ## 전체 아키텍처 구성도
 ![image](https://github.com/user-attachments/assets/107a5573-e6b8-49f5-a88c-85a4d8ea0a15)
@@ -51,13 +57,24 @@ Linux용 Windows 하위 시스템 체크 및 재부팅 후, 다음 명령어를 
     Get /api/systemstate/YYYY-MM-DD/YYYY-MM-DD
 
     #### [ 반환 데이터(Response) ] ####
-    {
-        "date" : "string"
-        "time" : "string"
-        "cpu" : number
-        "memory" : number
-        "disk" : number
-    }
+    [
+        {
+            "date": "2024-07-25",
+            "time": "12:00:00",
+            "cpu_usage": {
+                "value": 85.6,
+                "unit": "%"
+            },
+            "memory_usage": {
+                "value": 4096,
+                "unit": "KB"
+            },
+            "disk_usage": {
+                "value": 2048,
+                "unit": "KB"
+            }
+        }
+    ]
     
 ## 사용한 라이브러리
 + cpprestsdk
