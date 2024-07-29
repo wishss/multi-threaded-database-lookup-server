@@ -12,7 +12,7 @@ ListenerMgmt::~ListenerMgmt()
 }
 
 void ListenerMgmt::startMgmt() {
-    if (!db_mgmt_.open("test.db")) { throw std::runtime_error("Failed to open database."); }
+    if (!db_mgmt_.open("state.db")) { throw std::runtime_error("Failed to open database."); }
 
     try {
         listener_
